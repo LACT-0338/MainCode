@@ -23,7 +23,7 @@ void smooth_servo(int port, int position) { // smooth servo function makes the s
     }
     }
 }
-
+//What is up youtube today im going to touch raghav
 
 void move_to_poms() { // this function moves until the tophat sensor detects black line
     enable_servos();
@@ -64,7 +64,7 @@ void move_to_poms() { // this function moves until the tophat sensor detects bla
         msleep(1000);
         motor(1,100);
        motor(0,100);
-       msleep(800);
+       msleep(700);
        smooth_servo(CLAW,2047);
        msleep(50);
        smooth_servo(ARM_PORT,1200);
@@ -141,7 +141,7 @@ void move_to_poms() { // this function moves until the tophat sensor detects bla
       motor(0,0);
       motor(1,0);
       msleep(2000);
-      smooth_servo(1,2047);
+      smooth_servo(1,2047); // grip it
       msleep(2000);
       //go back
       motor(1,-100);
